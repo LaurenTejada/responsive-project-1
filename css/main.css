@@ -163,6 +163,15 @@ textarea {
     width: 80%;
   }
 
+  /* about page */
+  .mission-content h1 {
+    width: 85%;
+  }
+
+  /* .contact-section .content-wrapper h2 {
+    width: 90%;
+  } */
+
   /********** PADDING AND MARGINS **********/
   /* this is to correct default margins */
   header .content-wrapper,
@@ -286,7 +295,42 @@ textarea {
   }
 
   /* about page - about area */
-  
+  .mission-content h1 {
+    margin-bottom: 20px;
+  }
+
+  .mission-content .column {
+    margin-bottom: 20px;
+  }
+
+  .mission-content {
+    margin-bottom: 30px;
+  }
+
+  .contact-section .content-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .contact-section .content-wrapper h2 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+
+  .contact-section h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+
+  address {
+    margin-bottom: 20px;
+  }
+
+  .contact-section .content-wrapper {
+    margin-bottom: 30px;
+  }
+
 
 /* ==========================================================================
    Helper classes
