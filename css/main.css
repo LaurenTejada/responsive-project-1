@@ -87,7 +87,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
+  /********** BASE STYLES **********/
   header {
      display: flex;
      justify-content: center;
@@ -109,6 +109,13 @@ textarea {
      flex-direction: column;
    }
 
+   aside .content-wrapper {
+     display: flex;
+     justify-content: center;
+     align-items: flex-start;
+     flex-direction: column;
+   }
+
    footer {
      display: flex;
      justify-content: center;
@@ -116,6 +123,170 @@ textarea {
      flex-flow: column;
    }
 
+   /********** WIDTH STYLES **********/
+   .header-divider{
+    width: 100%;
+   }
+
+   header nav {
+     width: 60%;
+   }
+
+   header nav ul {
+     width: 45%;
+   }
+
+   .content-wrapper {
+    width: 88%;
+  }
+
+   footer .content-wrapper {
+    width: 55%;
+    margin: 50px 0;
+  }
+
+  /* homepage */
+  .features article {
+    width: 52%;
+  }
+
+  .reviews h2 {
+    width: 65%;
+  }
+
+  .reviews h3 {
+    width: 81%;
+  }
+
+  /* faq page */
+  .faq-section .content-wrapper h2 {
+    width: 80%;
+  }
+
+  /********** PADDING AND MARGINS **********/
+  /* this is to correct default margins */
+  header .content-wrapper,
+  .features p, 
+  footer p {
+    margin: 0;
+  }   
+
+  /* header/nav area */
+  header {
+    padding: 15px 0;
+    margin: 0;
+  }
+
+  header nav {
+    padding: 15px 0px 0px 0px;
+  }
+
+  /* content wrapper - the margins on left and right side */
+  .content-wrapper,
+  .features h2 {
+    margin: 0 20px;
+  }
+
+  /* header image area */
+  .content-wrapper h1 {
+    margin: 50px 40px 0 0;
+  }
+
+  /* signup area */
+  aside h3 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  aside p {
+    margin: 0;
+    padding-bottom: 10px;
+  }
+
+  input {
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
+  .signup-button {
+    margin-bottom: 50px;
+  }
+
+  /* features area */
+  .features h2 {
+    margin-top: 50px;
+    margin-right: 40px;
+    margin-bottom: 65px;
+  }
+
+  article .fontawesome-icon {
+    margin-top: 60px;
+  }
+
+  article .features-item-description {
+    margin-bottom: 65px;
+  }
+
+  /* reviews */
+  .review-headline h2 {
+    margin-top: 52px;
+    margin-bottom: 25px;
+  }
+  
+  .review-description h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .review-description p {
+    margin-bottom: 45px;
+  }
+
+  /* footer */
+  footer .content-wrapper {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .contact h3 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+
+  .social h3 {
+    margin-top: 48px;
+    margin-bottom: 20px;
+  }
+
+  .copyright {
+    margin-top: 50px;
+    margin-bottom: 5px;
+  }
+
+  /* faq page - faq area */
+  .faq-section .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .faq-section .content-wrapper h2 {
+    margin-top: 48px;
+    margin-bottom: 0px;
+  }
+
+  .faq-section .content-wrapper h3 {
+    margin-top: 45px;
+    margin-bottom: 0;
+  }
+
+  .faq-section .content-wrapper p {
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
+
+  /* about page - about area */
+  
 
 /* ==========================================================================
    Helper classes
