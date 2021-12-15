@@ -124,7 +124,7 @@ textarea {
    }
 
    /********** WIDTH STYLES **********/
-   .header-divider{
+   .header-divider {
     width: 100%;
    }
 
@@ -168,10 +168,6 @@ textarea {
     width: 85%;
   }
 
-  /* .contact-section .content-wrapper h2 {
-    width: 90%;
-  } */
-
   /********** PADDING AND MARGINS **********/
   /* this is to correct default margins */
   header .content-wrapper,
@@ -190,7 +186,7 @@ textarea {
     padding: 15px 0px 0px 0px;
   }
 
-  /* content wrapper - the margins on left and right side */
+  /* content wrapper - the margins on left and right side of main body section */
   .content-wrapper,
   .features h2 {
     margin: 0 20px;
@@ -294,7 +290,7 @@ textarea {
     margin-bottom: 0;
   }
 
-  /* about page - about area */
+  /* about page */
   .mission-content h1 {
     margin-bottom: 20px;
   }
@@ -420,9 +416,123 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /* tablet styles here */
+  /********** flexbox ***********/
+  .content-wrapper {
+    max-width: 640px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    margin-left: 65px;
+  }
+
+  /* header */
+  header .content-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row;
+    margin-right: 60px;
+    margin-left: 65px;
+  }
+
+  .header-divider {
+    display: none;
+  }
+
+  header nav {
+    padding-top: 0px;
+  }
+
+  header nav ul {
+    display: flex;
+    flex-flow: row;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* hero */
+  section .content-wrapper h1 {
+    width: 70%;
+  }
+
+  /* aside */
+  aside .content-wrapper {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+  }
+
+  aside .content-wrapper .row {
+    width: 40%;
+  }
+
+  /* features */
+  .features .content-wrapper {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  section .features .content-wrapper h2 {
+    width: 82%;
+  }
+
+  .features h2 {
+    margin-left: 0;
+  }
+
+  .features .content-wrapper article {
+    display: flex;
+    flex-flow: row wrap;
+    width: 40%;
+  }
+
+  /* review */
+  .reviews h2 {
+    margin: 0;
+    width: 70%;
+  }
+
+  article .review-description {
+    display: flex;
+    flex-flow: row;
+  }
+
+  .review-description .review-image,
+  .review-description h3,
+  .review-description p {
+    margin: 0;
+    width: 41%;
+  }
+
+  .review-description h3 {
+    width: 35%;
+  }
+
+  /* footer */
+  
+  footer .footer-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 70%;
+  }
+
+  .social h3 {
+    margin: 0;
+  }
+
+  /********** widths and margins ***********/
+
 }
+
+@media only screen and (min-width: 1200px) {
+  /*desktop styles here*/
+
+  }
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
