@@ -13,7 +13,7 @@
 html {
   color: #222;
   font-size: 1em;
-  line-height: 1.4;
+  /* line-height: 1.4; */
 }
 
 /** Remove text-shadow in selection highlight:
@@ -411,20 +411,23 @@ textarea {
     margin-left: 65px;
   }
 
+  .header-divider {
+    display: none;
+  }
+
   /* header */
+  header {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
   header .content-wrapper {
     display: flex;
+    justify-content: flex-start;
     flex-flow: row;
     margin-right: 60px;
     margin-left: 65px;
-  }
-
-  header {
-    justify-content: space-between;
-  }
-
-  .header-divider {
-    display: none;
+    width: 100%;
   }
 
   header nav {
@@ -441,12 +444,16 @@ textarea {
   }
 
   /* footer */
+  footer .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
   footer .footer-content {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: flex-start;
-    width: 70%;
+    width: 100%;
   }
 
   .social h3 {
@@ -513,9 +520,25 @@ textarea {
   }
 
   /*** faq page ***/
+  .faq-section .content-wrapper h2 {
+    margin-top: 95px;
+    magin-bottom: 30px;
+  }
+
   .faq-section .content-wrapper {
     display: flex;
     justify-content: flex-start;
+  }
+
+  .faq-section .content-wrapper {
+    display: flex;
+    flex-direction: row;
+    
+  }
+
+  .block {
+    margin-right: 45px;
+    width: 42%;
   }
 
   /********** widths and margins ***********/
@@ -523,7 +546,6 @@ textarea {
   header {
     padding: 0;
     margin: 20px 60px 20px 65px;
-    width: 100%;
   }
 
   header .content-wrapper {
