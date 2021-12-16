@@ -134,7 +134,7 @@ textarea {
     margin: 50px 0;
   }
 
-  /* homepage */
+  /***** homepage *****/
   .features article {
     width: 52%;
   }
@@ -401,7 +401,7 @@ textarea {
 
 @media only screen and (min-width: 768px) {
   /* tablet styles here */
-  /********** flexbox ***********/
+  /********** flexbox, widths, margins, padding ***********/
   /* base */
   .content-wrapper {
     max-width: 640px;
@@ -460,7 +460,7 @@ textarea {
     margin: 0;
   }
 
-  /*** homepage ***/
+  /***** homepage *****/
   /* hero */
   section .content-wrapper h1 {
     width: 70%;
@@ -519,27 +519,50 @@ textarea {
     width: 35%;
   }
 
-  /*** faq page ***/
+  /***** faq page *****/
   .faq-section .content-wrapper h2 {
     margin-top: 95px;
-    magin-bottom: 30px;
-  }
-
-  .faq-section .content-wrapper {
-    display: flex;
-    justify-content: flex-start;
+    margin-bottom: 30px;
   }
 
   .faq-section .content-wrapper {
     display: flex;
     flex-direction: row;
-    
+    justify-content: space-between;
+    margin-bottom: 65px;
   }
 
   .block {
     margin-right: 45px;
     width: 42%;
   }
+
+  .faq-section .content-wrapper h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .faq-section .content-wrapper p {
+    margin-bottom: 35px;
+  }
+
+  /***** about page *****/
+  section .content-wrapper .mission-content h1 {
+    width: 80%;
+    margin-top: 95px;
+    margin-bottom: 35px;
+  }
+
+  .mission-content {
+    margin-bottom: 98px;
+  }
+
+  .mission-content .column {
+    display: flex;
+    flex-flow: row wrap;
+    width: 38%;
+  }/* HERE - figuring out how to make the columns go onto one row ****************/
+  
 
   /********** widths and margins ***********/
   /* header */
@@ -554,7 +577,7 @@ textarea {
 
   /* footer */
   footer .content-wrapper {
-    margin-top: 95px;
+    margin-top: 85px;
     margin-bottom: 95px;
   }
 
