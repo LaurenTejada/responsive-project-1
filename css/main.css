@@ -547,13 +547,18 @@ textarea {
   }
 
   /***** about page *****/
-  section .content-wrapper .mission-content h1 {
+  /* headline */
+  #mission-headline {
     width: 80%;
     margin-top: 95px;
     margin-bottom: 35px;
   }
 
+  /* mission description */
   .mission-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     margin-bottom: 98px;
   }
 
@@ -561,8 +566,27 @@ textarea {
     display: flex;
     flex-flow: row wrap;
     width: 38%;
-  }/* HERE - figuring out how to make the columns go onto one row ****************/
+  }
   
+  /* contact us */
+  .contact-section .content-wrapper h2 {
+    width: 65%;
+    margin-top: 0;
+    margin-bottom: 50px; 
+  }
+
+  .contact-section .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    
+    margin-top: 95px;
+    margin-bottom: 98px;
+  }
+
+  .column {
+    width: 270px;
+  }
+
 
   /********** widths and margins ***********/
   /* header */
