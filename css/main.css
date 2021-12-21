@@ -365,7 +365,7 @@ textarea {
   }
 
 
-  /* stylingksjaf */
+  /* styling */
   .header-divider {
     border: solid;
     border-width: 1px;
@@ -460,6 +460,15 @@ textarea {
 
   .review-description h3 {
     width: 75%;
+  }
+
+  /* homepage background image */
+  .hero-image {
+    background: url(/img/jake-melara-30679-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
   }
 
 /* ==========================================================================
