@@ -105,7 +105,20 @@ textarea {
     text-decoration: none;
   }
 
-  
+  .hero-image {
+    background-image: url(../img/jake-melara-30679-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 600px;
+  }
+
+  section .content-wrapper h1 {
+    position: absolute;
+    top: 18%;
+    left: 10%;
+  }
 
   /********** BASE STYLES **********/
   header {
@@ -364,7 +377,6 @@ textarea {
     height: auto;
   }
 
-
   /* styling */
   .header-divider {
     border: solid;
@@ -463,13 +475,14 @@ textarea {
   }
 
   /* homepage background image */
-  .hero-image {
-    background: url(/img/jake-melara-30679-unsplash.jpg);
+  /* section .content-wrapper .hero-image {
+    background-image:url(/img/jake-melara-30679-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
-  }
+    margin: 0;
+  } */
 
 /* ==========================================================================
    Helper classes
@@ -556,6 +569,11 @@ textarea {
 
 @media only screen and (min-width: 768px) {
   /* tablet styles here */
+  /* font styles */
+  li {
+    font-size: 16px;
+  }
+
   /********* flexbox, widths, margins, padding *********/
   /* base styles */
   .content-wrapper {
@@ -568,7 +586,7 @@ textarea {
 
   /* header */
   .unplugged-logo {
-    width: 35%;
+    width: 70%;
   }
 
   .header-divider {
@@ -578,18 +596,19 @@ textarea {
   header {
     display: flex;
     justify-content: flex-start;
+    flex-wrap: nowrap;
     padding: 0;
     margin: 20px 60px 20px 65px;
+    width: 640px;
   }
   
   header .content-wrapper {
     display: flex;
-    justify-content: flex-start;
-    flex-flow: row;
+    justify-content: flex-end;
     margin-right: 60px;
     margin-left: 65px;
-    width: 100%;
     margin: 0;
+    width: 100%;
   }
 
   header nav {
@@ -609,9 +628,10 @@ textarea {
   footer .content-wrapper {
     display: flex;
     justify-content: space-between;
-    margin-top: 85px;
+    margin-top: 80px;
     margin-bottom: 95px;
   }
+
   footer .footer-content {
     display: flex;
     flex-flow: row wrap;
@@ -736,23 +756,24 @@ textarea {
   .faq-section .content-wrapper h2 {
     margin-top: 95px;
     margin-bottom: 30px;
+    font-size: 36px;
   }
 
   .faq-section .content-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 65px;
+    padding-bottom: 63px;
   }
 
   .block {
-    margin-right: 45px;
-    width: 42%;
+    width: 47%;
   }
 
   .faq-section .content-wrapper h3 {
     margin-top: 0;
     margin-bottom: 20px;
+    font-size: 14px;
   }
 
   .faq-section .content-wrapper p {
@@ -764,7 +785,7 @@ textarea {
   #mission-headline {
     width: 80%;
     margin-top: 95px;
-    margin-bottom: 35px;
+    margin-bottom: 36px;
   }
 
   /* mission description */
@@ -772,13 +793,22 @@ textarea {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 98px;
+    margin-bottom: 95px;
   }
 
   .mission-content .column {
     display: flex;
     flex-flow: row wrap;
-    width: 38%;
+    width: 45%;
+  }
+
+  .content-wrapper p {
+    margin: 0;
+  }
+
+  /* map */
+  figure {
+    margin: 0;
   }
   
   /* contact us */
@@ -791,8 +821,8 @@ textarea {
   .contact-section .content-wrapper {
     display: flex;
     justify-content: space-between;
-    margin-top: 95px;
-    margin-bottom: 98px;
+    padding-top: 95px;
+    padding-bottom: 98px;
   }
 
   .column {
@@ -803,6 +833,31 @@ textarea {
 
 @media only screen and (min-width: 1200px) {
   /*desktop styles here*/
+  /****** general font styles ********/
+  /*** header ***/
+
+
+  /*** footer ***/
+  .contact h3,
+  .social h3 {
+    font-size: 30px;
+  }
+
+  footer address, 
+  .copyright {
+    font-size: 18px;
+  }
+
+  /*** faq page ***/
+  .faq-section .content-wrapper h2 {
+    font-size: 48px;
+  }
+
+  .faq-section .content-wrapper h3,
+  .faq-section .content-wrapper p {
+    font-size: 18px;
+  } 
+
   /********* flexbox, widths, margins, padding *********/
   /* base styles */
   .content-wrapper {
@@ -849,9 +904,9 @@ textarea {
     margin-bottom: 10px;
   }
 
-  /***** homepage *****/
+  /*** homepage ***/
   .unplugged-logo {
-    width: 60%;
+    width: 85%;
   }
 
   section .content-wrapper h1 {
@@ -888,12 +943,12 @@ textarea {
   /***** faq page *****/
   .faq-section .content-wrapper h2 {
     margin-top: 90px;
-    margin-bottom: 25px;
+    margin-bottom: 27px;
     width:90%;
   }
 
   .block {
-    width: 430px;
+    width: 48%;
     margin: 0;
   }
 
@@ -901,12 +956,16 @@ textarea {
     width: 400px;
   }
 
+  .faq-section .content-wrapper h3 {
+    width: 90%;
+  }
+
   .faq-section .content-wrapper p {
     margin-bottom: 40px;
   }
 
   .faq-section .content-wrapper {
-    margin-bottom: 60px;
+    padding-bottom: 60px;
   }
 
   /***** about page *****/
