@@ -111,13 +111,41 @@ textarea {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 600px;
+    height: 500px;
   }
 
-  section .content-wrapper h1 {
+  .hero-text {
     position: absolute;
-    top: 18%;
+    top: 15%;
     left: 10%;
+  }
+
+  .review-image {
+    background-image: url(../img/omar-lopez-296944-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+    margin: 0;
+  }
+
+  .features {
+    background-image: url(../img/rawpixel-800820-unsplash1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 1450px;
+  }
+
+  .map {
+    background-image: url(../img/Screen\ Shot\ 2018-11-05\ at\ 9.59.36\ PM@2x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 450px;
   }
 
   /********** BASE STYLES **********/
@@ -474,15 +502,9 @@ textarea {
     width: 75%;
   }
 
-  /* homepage background image */
-  /* section .content-wrapper .hero-image {
-    background-image:url(/img/jake-melara-30679-unsplash.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    margin: 0;
-  } */
+  .features h2 {
+    margin-top: 50px;
+  }
 
 /* ==========================================================================
    Helper classes
@@ -783,7 +805,7 @@ textarea {
   /***** about page *****/
   /* headline */
   #mission-headline {
-    width: 80%;
+    width: 88%;
     margin-top: 95px;
     margin-bottom: 36px;
   }
