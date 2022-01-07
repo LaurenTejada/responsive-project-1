@@ -552,20 +552,18 @@ address {
 ========================================================================== */
 
 @media only screen and (min-width: 768px) {
-  /* tablet styles here */
-  /* font styles */
-  li {
-    font-size: 18px;
-  }
-
-  /********* flexbox, widths, margins, padding *********/
-  /* base styles */
+  /* tablet styles here */  
+  /********** base styles **********/
   .content-wrapper {
     max-width: 640px;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
     margin-left: 65px;
+  }
+
+  h3 {
+    font-size: 24px;
   }
 
   /* header */
@@ -608,12 +606,17 @@ address {
     align-items: center;
   }
 
+  li {
+    font-size: 16px;
+  }
+
   /* footer */
   footer .content-wrapper {
     display: flex;
     justify-content: space-between;
-    margin-top: 80px;
+    margin-top: 90px;
     margin-bottom: 95px;
+    margin-right: 10%;
   }
 
   footer .footer-content {
@@ -628,19 +631,33 @@ address {
     margin-bottom: 38px;
   }
 
-  .copyright {
-    margin-top: 0;
-  }
-
   .social h3 {
     margin: 0;
   }
 
-  /***** homepage *****/
+  .copyright {
+    margin-top: 0;
+  }
+
+  /******** background images ********/
+  /* homepage */
+  .hero-image {
+    height: 600px;
+  }
+
+  .hero-text {
+    position: absolute;
+    top: 18%;
+    left: 10%;
+  }
+
+  /******** homepage ********/
   /* hero */
   section .content-wrapper h1 {
     width: 70%;
     margin: 65px 0 420px 0;
+    font-size: 48px;
+    margin: 0;
   }
 
   /* sign up */
@@ -709,7 +726,7 @@ address {
     margin-bottom: 95px;
   }
 
-  /* section - review */
+  /* review */
   .reviews h2 {
     margin: 0;
     width: 70%;
@@ -736,7 +753,7 @@ address {
     margin-bottom: 98px;
   }
 
-  /***** faq page *****/
+  /******** faq ********/
   .faq-section .content-wrapper h2 {
     margin-top: 95px;
     margin-bottom: 30px;
@@ -764,7 +781,7 @@ address {
     margin-bottom: 35px;
   }
 
-  /***** about page *****/
+  /******** about ********/
   /* headline */
   #mission-headline {
     width: 88%;
