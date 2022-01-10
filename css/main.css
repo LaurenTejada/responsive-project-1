@@ -994,8 +994,13 @@ address {
   /******** faq ********/
   .faq-section .content-wrapper {
     max-width: unset;
+    width: 100%;
+    margin: 0;
+    padding-left: 125px;
+    padding-right: 135px;
+    padding-bottom: 60px;
   }
-  
+
   .faq-section .content-wrapper h2 {
     margin-top: 90px;
     margin-bottom: 27px;
@@ -1013,17 +1018,14 @@ address {
   }
 
   .faq-section .content-wrapper h3 {
-    width: 90%;
+    width: 100%;
     font-size: 18px;
   }
 
   .faq-section .content-wrapper p {
+    width: 100%;
     margin-bottom: 40px;
     font-size: 18px;
-  }
-
-  .faq-section .content-wrapper {
-    padding-bottom: 60px;
   }
 
   /******** about ********/
