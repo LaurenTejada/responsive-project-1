@@ -1029,17 +1029,26 @@ address {
   }
 
   /******** about ********/
-  #mission-headline {
-    margin-bottom: 20px;
-    width: 525px;
+  .mission .content-wrapper {
+    max-width: unset;
+    margin: 0;
+    padding: 0 50px 0 125px;
+    width: 100%;
   }
 
-  .mission-content {
-    margin-bottom: 60px;
+  #mission-headline {
+    margin-bottom: 20px;
+    width: 80%;
+  }
+
+  .contact-section .content-wrapper {
+    width: 100%;
+    max-width: unset;
+    margin: 0;
+    padding: 100px 150px 70px 125px;
   }
 
   .contact-section .content-wrapper h2 {
-    width: 80%;
     margin-bottom: 30px;
   }
 
