@@ -180,6 +180,13 @@ input {
   width: 100%;
 }
 
+/* fontawesome icons */
+.features i {
+	font-size: 3.75em;
+        margin-bottom: 40px;
+  padding-left: 80px;
+}
+
 /* about page */
 #mission-headline {
   font-size: 30px;
@@ -223,11 +230,10 @@ address {
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 1250px;
+  height: 100%;
 }
 
 /* about page */
-
 .map figure {
   z-index: unset;
   width: 100%;
@@ -371,8 +377,9 @@ input {
 }
 
 /* features */
-section .features {
+.features {
   margin: 0;
+  padding-bottom: 65px;
 }
 
 .features article {
@@ -380,7 +387,7 @@ section .features {
 }
 
 .features h2 {
-  margin: 50px 20px 0 0;
+  margin: 50px 50px 0 0;
 } 
 
 article .fontawesome-icon {
@@ -388,7 +395,6 @@ article .fontawesome-icon {
 }
 
 article .features-item-description {
-  margin-bottom: 65px;
   text-align: center;
   padding-right: 0;
 }
@@ -721,6 +727,7 @@ address {
   .features .content-wrapper {
     display: flex;
     justify-content: space-around;
+    margin-bottom: 0;
   }
 
   section .features .content-wrapper h2 {
@@ -739,22 +746,29 @@ address {
     margin-left: 50px;
     width: 185px;
     height: 150px;
+    margin-bottom: 50px;
   }
 
   article .features-item-description {
-    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
-  .features .content-wrapper {
-    margin-bottom: 95px;
+  /* fontawesome */
+  .features i {
+    font-size: 3.75em;
+    padding-left: 65px;
+    margin-bottom: 0;
   }
 
   /* review */
   .reviews .content-wrapper {
+    max-width: unset;
     padding-left: 65px;
     padding-top: 100px;
     padding-bottom: 100px;
     margin: 0;
+    width: 90%;
   }
 
   .reviews h2 {
@@ -941,7 +955,7 @@ address {
   }
 
   .content-wrapper p {
-    width: 80%;
+    width: 100%;
   }
 
   aside h3 {
@@ -965,6 +979,7 @@ address {
     max-width: unset;
     width: 100%;
     padding: 100px 125px 85px 125px;
+    width: 100%;
   }
 
   .features h2 {
@@ -972,7 +987,16 @@ address {
   }
 
   .features .content-wrapper article {
-    margin-right: 40px;
+    margin: 40px;
+  }
+
+  .features i {
+    padding-left: 0;
+    padding-bottom: 20px;
+  }
+
+  article p {
+    text-align: center;
   }
 
   /* review */
@@ -988,13 +1012,13 @@ address {
   }
 
   .reviews h2 {
-    padding-bottom: 93px;
+    padding-bottom: 90px;
     width: 100%;
   }
 
   .review-container h3 {
     padding-left: 35px;
-    width: 50%;
+    width: 60%;
   }
 
   .review-container p {
